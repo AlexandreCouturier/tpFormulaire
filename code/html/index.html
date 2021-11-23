@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <form>
+        <label for="prenom">Prénom</label>
+            <input type="text" id="prenom">
+        <label for="nom">Nom</label>
+            <input type="text" id="nom">
+        <label for="email">email</label>
+            <input type="email" name="" id="email" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]">
+        <label for="motdepasse">Mot de passe</label>
+            <input type="password" name="" id="motdepasse">
+        <label for="image">Insérer une image</label>
+            <input type="file" name="" id="image">
+        <label for="anniversaire">date de naissance</label>
+            <input type="date" name="" id="anniversaire">
+        <p>Choisir votre situation :</p>
+            <input type="radio" name="situation" id="solutionUn">
+                <label class="solutionDiff" for="solutionUn">célibataire</label>
+            <input type="radio" name="situation" id="solutionDeux" required>
+                <label class="solutionDiff" for="solutionDeux">couple</label>
+            <input type="radio" name="situation" id="solutionTrois" >
+                <label class="solutionDiff" for="solutionTrois">Veuf/ve</label>
+            <input type="submit" value="Envoyer" id="finition">
+    </form>
+</body>
+</html>
